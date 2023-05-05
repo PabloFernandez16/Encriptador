@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" ></script>
+    
+</head>
+<!--onload="ocultarBtn();-->
+<body  onload="ocultarBtn();"> 
+    <div class="row">
+            <div class="cardIzq">
+                <div class="titulo">
+                    <h1>Encriptador</h1>
+                </div>
+        
+                <div class="areaTexto">
+                    <input 
+                        class="textoUsuario" name="textoUsuario" 
+                        id="textoUsuario"
+                        type="text" 
+                        placeholder="Ingrese el texto a encriptar"
+                    >
+                </div>
+        
+                <div class="areaTerminos">
+                    <p>Solo letras minusculas y sin acentos</p>
+                </div>
+        
+                <div class="areaBotones">
+                    <button class="btn btn-encriptar" onclick="encriptar()"> Encriptar</button>
+                    <button class="btn" onclick="desencriptar()"> Desencriptar</button>
+                            
+                </div>
+            </div>
+    
+            <div class="cardDer">
+                <img id="imgNo" class="imgNo" src=".//img/imgMsjNoEncontrado.png" alt="">
+                <p id="titulo-mensaje" ></p>
+            
+               <textarea 
+                    name="txtcifrado" 
+                    id="txtcifrado" 
+                    cols="15"rows="10" 
+                    class="txtcifrado"
+                    >
+                </textarea>
+
+               <button class="btnCopiar btn" id="btnCopiar" onclick="copiarMsj()" >Copiar</button>
+            </div>
+    
+
+    </div>
+    
+    
+</body>
+</html>
